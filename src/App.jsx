@@ -1,5 +1,6 @@
 import "./App.css";
 import Saludo from "./Saludo.jsx";
+import ContenedorConEfecto from "./ContenedorConEfecto.jsx";
 
 function App() {
   const nombres = [
@@ -16,10 +17,13 @@ function App() {
 
   return (
     <>
-      {nombres.map((nombre) => (
-        <Saludo nombre={nombre.nombre} key={nombre.id} id={nombre.id} />
-      ))}
+      <ContenedorConEfecto />
     </>
+    // <>
+    //   {nombres.map((nombre) => (
+    //     <Saludo nombre={nombre.nombre} key={nombre.id} id={nombre.id} />
+    //   ))}
+    // </>
   );
 }
 
